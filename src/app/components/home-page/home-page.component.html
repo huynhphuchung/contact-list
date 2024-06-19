@@ -1,0 +1,13 @@
+<app-header (search)="onSearch($event)"></app-header>
+<mat-divider></mat-divider>
+<mat-sidenav-container class="main-content-container">
+  <mat-sidenav mode="side" opened class="sidenav">
+    <app-contact-list
+      (contactSelected)="onContactSelected($event)"
+      [searchTerm]="searchTerm"
+    ></app-contact-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="contact-detail-content">
+    <app-contact-detail [contactId]="selectedContactId"></app-contact-detail>
+  </mat-sidenav-content>
+</mat-sidenav-container>

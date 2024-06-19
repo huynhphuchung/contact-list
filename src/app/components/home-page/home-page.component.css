@@ -1,0 +1,17 @@
+.sidenav-container {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 250px;
+}
+
+.main-content-container {
+  display: flex;
+  height: calc(100vh - 80px); /* Adjust for header height */
+}
+
+.contact-detail-content {
+  flex: 1;
+  padding: 20px;
+}

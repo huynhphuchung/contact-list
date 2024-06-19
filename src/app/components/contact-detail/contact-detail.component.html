@@ -1,0 +1,8 @@
+<div *ngIf="contact; else noSelection">
+  <h2>{{ contact.name }}'s Details</h2>
+  <p>Email: {{ contact.email }}</p>
+  <p>Phone: {{ contact.phone }}</p>
+</div>
+<ng-template #noSelection>
+  <p>Please select a contact to view details.</p>
+</ng-template>

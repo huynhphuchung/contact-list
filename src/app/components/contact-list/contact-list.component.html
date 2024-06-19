@@ -1,0 +1,8 @@
+<mat-nav-list>
+  <mat-list-item
+    *ngFor="let contact of contacts"
+    (click)="selectContact(contact.id)"
+  >
+    {{ contact.name }}
+  </mat-list-item>
+</mat-nav-list>

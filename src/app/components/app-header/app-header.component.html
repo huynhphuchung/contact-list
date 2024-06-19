@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <span>My Contact List</span>
+  <span class="spacer"></span>
+  <mat-form-field appearance="fill">
+    <mat-label>Search</mat-label>
+    <input matInput [(ngModel)]="searchTerm" (keydown.enter)="onSearch()" />
+  </mat-form-field>
+  <button mat-button (click)="onSearch()">Search</button>
+</mat-toolbar>
